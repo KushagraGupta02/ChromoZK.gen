@@ -4,8 +4,8 @@
 
 **zkZombies present ZKin.gen - our novel ZK-based decentralised ancestry detection framework**  
 
-> built on ☕ at **#**ETHIndia.
-> 
+built on ☕ at **#**ETHIndia.
+ 
 
 # 💡 Goals
 
@@ -20,7 +20,7 @@
 
 # 📺 Preview
 
-![Untitled](Untitled%201.png)
+![Untitled](Untitled 1.png)
 
 Mobile Application
 
