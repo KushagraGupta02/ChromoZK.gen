@@ -1,10 +1,13 @@
 .con-home{
    
-    height: 100vh;
+    height: max-content;
    /* background-image: url("https://images.unsplash.com/photo-1576086213369-97a306d36557?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2VuZXxlbnwwfHwwfHx8MA%3D%3D+"); */
     width: 100vw;
     position: relative;
-   overflow: hidden;
+   overflow-x: hidden;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
     background-size: cover;
 }
 .con-nav{
@@ -38,12 +41,15 @@
     border-radius: 15px;
    width: 500px;
    margin: auto;
-   margin-top: 200px;
+ 
    padding: 10px;
 
    height: max-content;
    gap: 30px;
    flex-direction: column;
+}
+.box-home p{
+    font-size: large;
 }
  strong{
     margin: 0;
@@ -83,7 +89,7 @@
 }
 .con-partners{
     padding-top: 15px;
-    position: absolute;
+    
     bottom: 30px;
     display: flex;
     width: 100vw;

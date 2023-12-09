@@ -4,6 +4,7 @@ import Popup from '../components/popup/popup'
 
 import "./home.css"
 import Nav from '../components/popup/nav'
+import Sk from "../assets/sketch.jpg"
 const HomePage = () => {
     const [popup, setpopup] = useState(false)
     const close=()=>{
@@ -36,6 +37,7 @@ const HomePage = () => {
     <div className="con-home">
         {popup && <Popup closepopup={()=>close()}/>}
         <Nav/>
+        <img src={Sk} alt="" height={"400px"} width={"400px"} style={{margin:"10px auto"}}/>
         <div className="box-home">
            
 
@@ -54,12 +56,17 @@ const HomePage = () => {
                 </div>
                 <div className="partner">
                     
-                    <p className='p-name'>Airstack</p>
+                    <p className='p-name'>Push Protocol</p>
 
                 </div>
                 <div className="partner">
                    
-                    <p className='p-name'>Polygon</p>
+                    <p className='p-name'>Alliance</p>
+                    
+                </div>
+                <div className="partner">
+                   
+                    <p className='p-name'>File Coin</p>
                     
                 </div>
 
