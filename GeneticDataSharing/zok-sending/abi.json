@@ -1,0 +1,19 @@
+{
+  "inputs": [
+    {
+      "name": "geneticData",
+      "public": false,
+      "type": "array",
+      "components": {
+        "size": 4,
+        "type": "field"
+      }
+    }
+  ],
+  "output": {
+    "type": "tuple",
+    "components": {
+      "elements": []
+    }
+  }
+}
