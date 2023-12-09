@@ -1,18 +1,24 @@
 .con-home{
-    display: flex;
+   
     height: 100vh;
-   background-image: url("https://images.unsplash.com/photo-1576086213369-97a306d36557?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2VuZXxlbnwwfHwwfHx8MA%3D%3D+");
+   /* background-image: url("https://images.unsplash.com/photo-1576086213369-97a306d36557?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2VuZXxlbnwwfHwwfHx8MA%3D%3D+"); */
     width: 100vw;
-    justify-content: center;
-    background-position: center;
-    background-repeat: no-repeat;
     position: relative;
-    align-items: center;
+   overflow: hidden;
     background-size: cover;
 }
-h1,h2,h3{
-    margin: 0;
-    padding: 0;
+.con-nav{
+    display: flex;
+    background-color: white;
+    padding-top: 10px;
+    flex-direction: row;
+    padding-bottom:10px ;
+    padding-left:50px;
+    gap: 50px;
+    justify-content: flex-start;
+}
+.con-nav h1{
+    margin-left: 50px;
 }
 .box-image{
    text-overflow: ellipsis;
@@ -26,13 +32,15 @@ h1,h2,h3{
    
 }
 .box-home{
-    background-color: rgba(245, 240, 240, 0.4);
-  -webkit-backdrop-filter: blur(1px);
-  backdrop-filter: blur(1px);
+    
     display: flex;
+    
     border-radius: 15px;
    width: 500px;
+   margin: auto;
+   margin-top: 200px;
    padding: 10px;
+
    height: max-content;
    gap: 30px;
    flex-direction: column;
@@ -48,15 +56,15 @@ h1,h2,h3{
     
 }
 .parth{
-    background-color: rgb(94, 94, 8);
-    color: white;
+    
+    color: rgb(11, 7, 7);
     border-radius: 10px;
     width: 140px;
+    font-size: 30px;
+    margin: auto;
     display: flex;
     justify-content: center;
     padding: 10px 0;
-
-
 }
 .box-btns button{
     padding: 5px 20px;
@@ -74,22 +82,15 @@ h1,h2,h3{
     object-position: center;
 }
 .con-partners{
-    display: flex;
-    background-color: rgba(255, 255, 255, 0.4);
-  -webkit-backdrop-filter: blur(1px);
-  backdrop-filter: blur(1px);
-    position: fixed;
-    height: calc(100vh-60px);
-    width: 150px;
-    top: 30px;
     padding-top: 15px;
+    position: absolute;
     bottom: 30px;
-    flex-direction: column;
-    right: 15px;
+    display: flex;
+    width: 100vw;
+    flex-direction: row;
+    bottom: 15px;
     border-radius: 10px;
-    
     align-items: center;
-    
 }
 .con-partners .partner{
     display: flex;

@@ -15,7 +15,7 @@ app.post('/execute', (req, res) => {
   process.chdir(npmProjectPath);
 
   // Execute the desired npm command (e.g., start)
-  exec('a.out', (error, stdout, stderr) => {
+  exec('a', (error, stdout, stderr) => {
     if (error) {
       console.error(`Error executing npm command: ${error.message}`);
       return res.status(500).send(`Error executing npm command: ${error.message}`);

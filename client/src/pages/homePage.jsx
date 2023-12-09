@@ -1,8 +1,9 @@
 
 import React, { useState } from 'react'
 import Popup from '../components/popup/popup'
-import Logo from "../assets/logo.png"
+
 import "./home.css"
+import Nav from '../components/popup/nav'
 const HomePage = () => {
     const [popup, setpopup] = useState(false)
     const close=()=>{
@@ -34,39 +35,36 @@ const HomePage = () => {
   return (
     <div className="con-home">
         {popup && <Popup closepopup={()=>close()}/>}
+        <Nav/>
         <div className="box-home">
-            <div className="box-image">
+           
 
-           <img src={Logo} alt="" id='logo'/>
-           <h1>ChromoZK.gen</h1>
-            </div>
-
-            <strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus ratione nulla quasi at dolorem, ipsa ut quia maxime enim labore soluta provident dignissimos voluptatem tenetur sunt optio error debitis, necessitatibus commodi architecto.</strong>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus ratione nulla quasi at dolorem, ipsa ut quia maxime enim labore soluta provident dignissimos voluptatem tenetur sunt optio error debitis, necessitatibus commodi architecto.</p>
             <div className="box-btns"><button onClick={()=> setpopup(true)}>Add</button> <button onClick={runbserver}>Verify</button></div>
         </div>
-        <div className="con-partners">
-            <div className="box-partners">
-                <div className="parth">
+        <div className="parth">
                     <h3>Partners</h3>
                 </div>
+            <div className="con-partners">
+                
                 <div className="partner">
-                    <img src="" alt="" />
+                   
                     <p className='p-name'>Scroll</p>
 
                 </div>
                 <div className="partner">
-                    <img src="" alt="" />
+                    
                     <p className='p-name'>Airstack</p>
 
                 </div>
                 <div className="partner">
-                    <img src="" alt="" />
+                   
                     <p className='p-name'>Polygon</p>
                     
                 </div>
 
             </div>
-        </div>
+        
     </div>
   )
 }
