@@ -1,16 +1,50 @@
 # ZKin.gen
 
-![Untitled](Untitled)
+![Untitled](ZKin_images/Untitled.png)
 
 **zkZombies present ZKin.gen - our novel ZK-based decentralised ancestry detection framework**  
 
-built on ☕ at **#** ETHIndia.
- 
+> built on ☕ at **#**ETHIndia.
+> 
 
-# 💡 Goals
+![Untitled](ZKin_images/Untitled%201.png)
 
-- Use scroll zkp for deploying our contract, which extends Ethereum capability through zero-knowledge proof tech and EVM compatibility.
-- Use Zokrates for ZK verification and proof.
+## 💡**The problem ZKin.gen solves**
+
+We present ZKin.gen - our novel ZK based decentralised ancestry detection framework, which is completely onchain -
+
+It is a decentralized upgraded version of 23andMe that leverages blockchain decentralized technologies to address several key problems associated with centralized genetic testing platforms such as
+
+- relinquishing control over their genetic data to a centralized entity as it raises concerns about data ownership and the potential misuse or access to sensitive information.
+
+Our decentralized platform empowers individuals to maintain ownership and control of their genotypic and phenotypic data, which privacy and data autonomy.
+
+- Centralized databases are vulnerable to hacks, jeopardizing sensitive genetic data and raising privacy concerns.
+
+Our Blockchain based app provides secure, tamper-resistant storage with hashed encryption, reducing the risk of unauthorized access or breaches.
+
+- Users lack clarity on how genetic data is used in centralized models, raising concerns about consent and ethical use.
+
+We implement blockchain-based smart contracts with Zero-Knowledge Proofs for transparent, auditable data transactions that ensure computations are verifiable. Users can define ethical terms for data sharing, enhancing transparency.
+
+Additionally, users are notified by using the push protocol when rewards are sent to their specified address, promoting accountability and visibility.
+
+We utlise zero knowledge proofs to inform the consumers about how we obtain their ancestry information from the centralised prover's database.
+
+# 💡 Our Framework
+
+- Used scroll zkEVM for deploying our contract, which extends Ethereum's capability through zero-knowledge proofs tech and EVM compatibility. It reduces the burden on the ethereum main chain, and provides much lower transaction fees and latency!
+
+Contract Address - 0xf6f8061c8f61cd1c81ef58fb3846154724430b3c
+Scroll-Etherscan URL - [https://sepolia.scrollscan.dev/address/0xf6f8061c8f61cd1c81ef58fb3846154724430b3c#code](https://sepolia.scrollscan.dev/address/0xf6f8061c8f61cd1c81ef58fb3846154724430b3c#code)
+
+![Untitled](ZKin_images/Untitled.jpeg)
+
+- Used the Zokrates framework for ZK verification and proofs.
+
+![Untitled](ZKin_images/Untitled%202.png)
+
+![Untitled](ZKin_images/Untitled%203.png)
 
 # 🧠 Knowledge Primer
 
@@ -20,35 +54,31 @@ built on ☕ at **#** ETHIndia.
 
 # 📺 Preview
 
-![Untitled]((Untitled%201.png))
-
-Mobile Application
+![Untitled](ZKin_images/Untitled%204.png)
 
 # 💻 Tech Stack
 
-- Scroll zkp
+- Scroll zkEVM
 - Zokrates
-- node.js
-- javascript
-- solidity
+- Node.js
+- Javascript/Solidity
+- Our key idea - Sequence Alignment for obtaining the correlation between Genetic data: dynamic programming over the RNA/DNA Secondary structures. (Used the longest common subsequence (LCS) algorithm as a black-box for the computation)
 
-# 📦 Inside the box
+![Untitled](ZKin_images/Untitled%205.png)
 
-## 1. System Architecture Diagram
+# System Architecture Diagram
 
-- Let’s assume the flow begins with user,user send their DNA on-chain and off-chain
-- off chain computation gives him the required data and on-chain after verifying his hash
-
-## 
+- Let’s assume the flow begins with user, user send their DNA on-chain and to a centralised prover.
+- The centralised prover computation gives them the required data after verifying their hash using ZK proofs to give them a reward, and their ancestry data.
 
 # ⏭️ What’s next
 
-- Extending this system to more sophististicated systems.
+- Extending this system to more sophisticated systems, and integrating it with Filecoin/IPFS databases.
 
 # Challenges we ran into
 
-- Initially we planned on using Dune for analytics in our project. We implemented the same, but later came to realise that as ours is a zero knowledge system we couldn’t have any deep level analytics on the same.
-- We also planned on using push protocol that’d notify users when they had successfully claimed an offer. As Push protocol requires the wallet addresses of the people who use it and our system is a zero knowledge system, we had to scrape that plan as well.
+- Limited ScrollSepolia ETH, integrating various parts of the project together. We had some challenge initially with setting up the verification of scrollzkevm contract, but were able to figure it out along the way.
+- Utilising zero knowledge proofs to inform the consumers about how we obtain their ancestry information from the centralised prover's database, also was a bit of a challenge.
 
 # 📜 License
 
@@ -60,6 +90,12 @@ Please read `[Contributing.md](Enter%20URL)` for details on our code of conduct,
 
 # 💥 Contributors
 
-# 
+- Kushagra Gupta
+- Aditya Anand
+- Aditya Raj
+- Muskan
+- Suraj Choudhary
 
-##
+We are a team of undergraduates from varying disciplines at IITD - It would be our pleasure to connect!
+
+![Untitled](ZKin_images/Untitled%206.png)
