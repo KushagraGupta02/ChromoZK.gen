@@ -1,0 +1,9 @@
+import "hashes/sha256/512bitPacked" as sha256packed;
+
+def main(private field[4] geneticData){
+    // Compute the SHA256 hash of the geneticData
+    field[2] hash = sha256packed(geneticData);
+
+    // Check if the calculated hash matches the expected hash
+    assert(hash[0] == 263561599766550617289250058199814760685 && hash[1] == 65303172752238645975888084098459749904);
+}
