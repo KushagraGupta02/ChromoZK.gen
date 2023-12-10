@@ -46,7 +46,10 @@ Scroll-Etherscan URL - [https://sepolia.scrollscan.dev/address/0xf6f8061c8f61cd1
 
 ![Untitled](ZKin_images/Untitled%203.png)
 
-# 🧠 Knowledge Primer
+# Flow Diagram
+![Untitled](ZKin_images/Untitled%204.png)
+
+# 🧠 Knowledge Primer - Zokrates
 
 - ZoKrates is a toolbox for zkSNARKs on Ethereum. It helps you use verifiable computation in your DApp, from the specification of your program in a high-level language to generating proofs of computation to verifying those proofs in Solidity
 - Ethereum runs computations on all nodes of the network, resulting in high costs, limits in complexity, and low privacy. zkSNARKs have been enabled to only verify computations on-chain for a fraction of the cost of running them, but are hard to grasp and work with
@@ -54,7 +57,7 @@ Scroll-Etherscan URL - [https://sepolia.scrollscan.dev/address/0xf6f8061c8f61cd1
 
 # 📺 Preview
 
-![Untitled](ZKin_images/Untitled%204.png)
+![Untitled](ZKin_images/Untitled%2010.png)
 
 # 💻 Tech Stack
 
@@ -62,6 +65,7 @@ Scroll-Etherscan URL - [https://sepolia.scrollscan.dev/address/0xf6f8061c8f61cd1
 - Zokrates
 - Node.js
 - Javascript/Solidity
+- Push Protocol
 - Our key idea - Sequence Alignment for obtaining the correlation between Genetic data: dynamic programming over the RNA/DNA Secondary structures. (Used the longest common subsequence (LCS) algorithm as a black-box for the computation)
 
 ![Untitled](ZKin_images/Untitled%205.png)
@@ -70,6 +74,9 @@ Scroll-Etherscan URL - [https://sepolia.scrollscan.dev/address/0xf6f8061c8f61cd1
 
 - Let’s assume the flow begins with user, user send their DNA on-chain and to a centralised prover.
 - The centralised prover computation gives them the required data after verifying their hash using ZK proofs to give them a reward, and their ancestry data.
+- Once the consumers have been rewarded, we notify them using the push protocol.
+
+![Untitled](ZKin_images/Untitled%209.png)
 
 # ⏭️ What’s next
 
@@ -98,4 +105,3 @@ Please read `[Contributing.md](Enter%20URL)` for details on our code of conduct,
 
 We are a team of undergraduates from varying disciplines at IITD - It would be our pleasure to connect!
 
-![Untitled](ZKin_images/Untitled%206.png)
