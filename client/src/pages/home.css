@@ -10,6 +10,18 @@
    justify-content: center;
     background-size: cover;
 }
+.overlay{
+    position: fixed; 
+  top: 0;
+  z-index: 1000;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(128,128,128,0.5); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .con-nav{
     display: flex;
     background-color: white;

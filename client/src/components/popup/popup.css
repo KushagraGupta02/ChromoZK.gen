@@ -9,10 +9,10 @@
     min-height: 200px;
     overflow: hidden;
     width: 400px;
-    z-index: 1000;
-    left: calc((100%-400px)/2);
+   
+    
     border-radius: 15px;
-    top: 25%;
+    
     gap: 20px;
 }
 .popup-content{

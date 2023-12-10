@@ -35,13 +35,13 @@ const HomePage = () => {
     }
   return (
     <div className="con-home">
-        {popup && <Popup closepopup={()=>close()}/>}
+        {popup && <div className="overlay" onClick={()=> setpopup(false)}><Popup closepopup={()=>close()}/></div>}
         <Nav/>
         <img src={Sk} alt="" height={"400px"} width={"400px"} style={{margin:"10px auto"}}/>
         <div className="box-home">
            
 
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus ratione nulla quasi at dolorem, ipsa ut quia maxime enim labore soluta provident dignissimos voluptatem tenetur sunt optio error debitis, necessitatibus commodi architecto.</p>
+            <p>We present ZKin.gen - our novel decentralised ancestry detection framework, which is completely onchain! #ETHIndia 2023 Project for zkZombies</p>
             <div className="box-btns"><button onClick={()=> setpopup(true)}>Add</button> <button onClick={runbserver}>Verify</button></div>
         </div>
         <div className="parth">
