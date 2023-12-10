@@ -35,7 +35,7 @@ const HomePage = () => {
     }
   return (
     <div className="con-home">
-        {popup && <div className="overlay" onClick={()=> setpopup(false)}><Popup closepopup={()=>close()}/></div>}
+        {popup && <div className="overlay" ><Popup closepopup={()=>close()}/></div>}
         <Nav/>
         <img src={Sk} alt="" height={"400px"} width={"400px"} style={{margin:"10px auto"}}/>
         <div className="box-home">
