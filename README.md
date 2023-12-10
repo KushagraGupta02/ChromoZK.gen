@@ -1,6 +1,6 @@
 # ZKin.gen
 
-![Untitled](Untitled.png)
+![Untitled]((https://github.com/KushagraGupta02/ZKin.gen/blob/master/Untitled.png?raw=true))
 
 **zkZombies present ZKin.gen - our novel ZK-based decentralised ancestry detection framework**  
 
@@ -20,7 +20,7 @@ built on ☕ at **#** ETHIndia.
 
 # 📺 Preview
 
-![Untitled](Untitled 1.png)
+![Untitled]((https://github.com/KushagraGupta02/ZKin.gen/blob/main/Untitled%201.png?raw=true))
 
 Mobile Application
 
